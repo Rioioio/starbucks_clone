@@ -70,11 +70,11 @@ new Swiper('.notice-line .swiper',{
 new Swiper('.promotion .swiper', {
   slidesPerView : 3, // 한번에 보여줄 슬라이드
   spaceBetween : 10, // 슬라이드 사이 여백 =
-  centerdSlides : true, // 1번 슬라이드가 정 가운데 나옴
+  centeredSlides : true, // 1번 슬라이드가 정 가운데 나옴
   loop : true,
   // autoplay : {
   //   delay : 3000
-  // },
+  // }
   pagination : {
     el : '.promotion .swiper-pagination',
     clickable : true, // 페이지 번호 요소 선택자 
