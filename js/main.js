@@ -1,21 +1,4 @@
-const searchEl = document.querySelector('.search');
-const searchInputEl = searchEl.querySelector('input');
-
-searchEl.addEventListener('click',function () {
-  // logic... 
-  searchInputEl.focus();
-});
-
-searchInputEl.addEventListener('focus',function(){
-  searchEl.classList.add('focused');
-  searchInputEl.setAttribute('placeholder','통합검색');
-});
-searchInputEl.addEventListener('blur',function(){
-  searchEl.classList.remove('focused');
-  searchInputEl.setAttribute('placeholder','');
-});
-
-// Scroll 함수 !! gsap 사용
+//  Scroll 함수 !! gsap 사용
 const badgeEl = document.querySelector('header .badges')
 const toTopEl = document.querySelector('#to-top');
 
@@ -95,10 +78,6 @@ new Swiper('.awards .swiper',{
 
 
 
-
-
-
-
 // PROMOTION 
 
 const promotionEl = document.querySelector('.promotion');
@@ -126,8 +105,3 @@ spyEls.forEach(function (spyEl) {
   .setClassToggle(spyEl,'show')
   .addTo(new ScrollMagic.Controller());
 });
-
-// 날짜 계산 
-
-const thisYear = document.querySelector('.this-year');
-thisYear.textContent = new Date().getFullYear();  
